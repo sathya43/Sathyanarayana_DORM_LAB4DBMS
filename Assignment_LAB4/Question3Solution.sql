@@ -1,0 +1,1 @@
+select c.cus_gender,count(*) as Total_Number from orders as o join customer as c on o.cus_id = c.cus_id where o.ord_amount >= 3000 group by c.cus_gender;
